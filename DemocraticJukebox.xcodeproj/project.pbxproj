@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D24879DC1B18B74B008BB8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24879DB1B18B74B008BB8E3 /* AppDelegate.swift */; };
-		D24879DE1B18B74B008BB8E3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24879DD1B18B74B008BB8E3 /* FirstViewController.swift */; };
-		D24879E01B18B74B008BB8E3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24879DF1B18B74B008BB8E3 /* SecondViewController.swift */; };
 		D24879E31B18B74C008BB8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24879E11B18B74C008BB8E3 /* Main.storyboard */; };
 		D24879E51B18B74C008BB8E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24879E41B18B74C008BB8E3 /* Images.xcassets */; };
 		D24879E81B18B74C008BB8E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24879E61B18B74C008BB8E3 /* LaunchScreen.xib */; };
 		D24879F41B18B74C008BB8E3 /* DemocraticJukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24879F31B18B74C008BB8E3 /* DemocraticJukeboxTests.swift */; };
+		D24879FE1B18BC05008BB8E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24879FD1B18BC05008BB8E3 /* LoginViewController.swift */; };
+		D8FF28996FA2E3E17303F4CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FB9556014DAD996E8D6F49 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +27,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D35B33EECB7FD4C629303D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6B13FEBC2419E8A51AE4B780 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B9FB9556014DAD996E8D6F49 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24879D61B18B74B008BB8E3 /* DemocraticJukebox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemocraticJukebox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24879DA1B18B74B008BB8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D24879DB1B18B74B008BB8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D24879DD1B18B74B008BB8E3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D24879DF1B18B74B008BB8E3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D24879E21B18B74C008BB8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D24879E41B18B74C008BB8E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D24879E71B18B74C008BB8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D24879ED1B18B74C008BB8E3 /* DemocraticJukeboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemocraticJukeboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24879F21B18B74C008BB8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D24879F31B18B74C008BB8E3 /* DemocraticJukeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemocraticJukeboxTests.swift; sourceTree = "<group>"; };
+		D24879FD1B18BC05008BB8E3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D24879FF1B18BC37008BB8E3 /* DemocraticJukebox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemocraticJukebox-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FF28996FA2E3E17303F4CE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +62,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2D36B2DC299E448A835FDF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D35B33EECB7FD4C629303D7 /* Pods.debug.xcconfig */,
+				6B13FEBC2419E8A51AE4B780 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D24879CD1B18B74B008BB8E3 = {
 			isa = PBXGroup;
 			children = (
 				D24879D81B18B74B008BB8E3 /* DemocraticJukebox */,
 				D24879F01B18B74C008BB8E3 /* DemocraticJukeboxTests */,
+				D2487A021B18BC9C008BB8E3 /* Frameworks */,
 				D24879D71B18B74B008BB8E3 /* Products */,
+				A2D36B2DC299E448A835FDF7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,11 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				D24879DB1B18B74B008BB8E3 /* AppDelegate.swift */,
-				D24879DD1B18B74B008BB8E3 /* FirstViewController.swift */,
-				D24879DF1B18B74B008BB8E3 /* SecondViewController.swift */,
+				D24879FD1B18BC05008BB8E3 /* LoginViewController.swift */,
 				D24879E11B18B74C008BB8E3 /* Main.storyboard */,
-				D24879E41B18B74C008BB8E3 /* Images.xcassets */,
-				D24879E61B18B74C008BB8E3 /* LaunchScreen.xib */,
 				D24879D91B18B74B008BB8E3 /* Supporting Files */,
 			);
 			path = DemocraticJukebox;
@@ -93,7 +105,10 @@
 		D24879D91B18B74B008BB8E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D24879E41B18B74C008BB8E3 /* Images.xcassets */,
+				D24879E61B18B74C008BB8E3 /* LaunchScreen.xib */,
 				D24879DA1B18B74B008BB8E3 /* Info.plist */,
+				D24879FF1B18BC37008BB8E3 /* DemocraticJukebox-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,6 +130,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D2487A021B18BC9C008BB8E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9FB9556014DAD996E8D6F49 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D24879F71B18B74C008BB8E3 /* Build configuration list for PBXNativeTarget "DemocraticJukebox" */;
 			buildPhases = (
+				B42D5A96CD07EAADCE638C84 /* Check Pods Manifest.lock */,
 				D24879D21B18B74B008BB8E3 /* Sources */,
 				D24879D31B18B74B008BB8E3 /* Frameworks */,
 				D24879D41B18B74B008BB8E3 /* Resources */,
+				C2E963C698FE16379A9AE2AB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,14 +235,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B42D5A96CD07EAADCE638C84 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2E963C698FE16379A9AE2AB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D24879D21B18B74B008BB8E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24879E01B18B74B008BB8E3 /* SecondViewController.swift in Sources */,
+				D24879FE1B18BC05008BB8E3 /* LoginViewController.swift in Sources */,
 				D24879DC1B18B74B008BB8E3 /* AppDelegate.swift in Sources */,
-				D24879DE1B18B74B008BB8E3 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,21 +399,25 @@
 		};
 		D24879F81B18B74C008BB8E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D35B33EECB7FD4C629303D7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DemocraticJukebox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/DemocraticJukebox/DemocraticJukebox-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		D24879F91B18B74C008BB8E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B13FEBC2419E8A51AE4B780 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DemocraticJukebox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/DemocraticJukebox/DemocraticJukebox-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -413,6 +474,7 @@
 				D24879F91B18B74C008BB8E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D24879FA1B18B74C008BB8E3 /* Build configuration list for PBXNativeTarget "DemocraticJukeboxTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +483,7 @@
 				D24879FC1B18B74C008BB8E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
