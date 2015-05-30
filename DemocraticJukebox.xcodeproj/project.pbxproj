@@ -13,6 +13,12 @@
 		D24879E81B18B74C008BB8E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24879E61B18B74C008BB8E3 /* LaunchScreen.xib */; };
 		D24879F41B18B74C008BB8E3 /* DemocraticJukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24879F31B18B74C008BB8E3 /* DemocraticJukeboxTests.swift */; };
 		D24879FE1B18BC05008BB8E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24879FD1B18BC05008BB8E3 /* LoginViewController.swift */; };
+		D2BDF24D1B18D096002A1FC3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BDF24C1B18D096002A1FC3 /* Login.storyboard */; };
+		D2BDF24F1B18D2AF002A1FC3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF24E1B18D2AF002A1FC3 /* Model.swift */; };
+		D2BDF2511B18D40C002A1FC3 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF2501B18D40C002A1FC3 /* UIViewControllerExtensions.swift */; };
+		D2BDF2561B18D5AC002A1FC3 /* ParseEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF2551B18D5AC002A1FC3 /* ParseEngine.swift */; };
+		D2BDF2581B18DD02002A1FC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF2571B18DD02002A1FC3 /* User.swift */; };
+		D2BDF25A1B18E00C002A1FC3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF2591B18E00C002A1FC3 /* Song.swift */; };
 		D8FF28996FA2E3E17303F4CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FB9556014DAD996E8D6F49 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,12 @@
 		D24879F31B18B74C008BB8E3 /* DemocraticJukeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemocraticJukeboxTests.swift; sourceTree = "<group>"; };
 		D24879FD1B18BC05008BB8E3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D24879FF1B18BC37008BB8E3 /* DemocraticJukebox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemocraticJukebox-Bridging-Header.h"; sourceTree = "<group>"; };
+		D2BDF24C1B18D096002A1FC3 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D2BDF24E1B18D2AF002A1FC3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D2BDF2501B18D40C002A1FC3 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		D2BDF2551B18D5AC002A1FC3 /* ParseEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseEngine.swift; sourceTree = "<group>"; };
+		D2BDF2571B18DD02002A1FC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D2BDF2591B18E00C002A1FC3 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				D24879DB1B18B74B008BB8E3 /* AppDelegate.swift */,
-				D24879FD1B18BC05008BB8E3 /* LoginViewController.swift */,
+				D2BDF2521B18D510002A1FC3 /* Extensions */,
+				D2BDF2531B18D519002A1FC3 /* ViewControllers */,
+				D2BDF2541B18D523002A1FC3 /* Model */,
+				D2BDF24C1B18D096002A1FC3 /* Login.storyboard */,
 				D24879E11B18B74C008BB8E3 /* Main.storyboard */,
 				D24879D91B18B74B008BB8E3 /* Supporting Files */,
 			);
@@ -136,6 +151,33 @@
 				B9FB9556014DAD996E8D6F49 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2BDF2521B18D510002A1FC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2BDF2501B18D40C002A1FC3 /* UIViewControllerExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D2BDF2531B18D519002A1FC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D24879FD1B18BC05008BB8E3 /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D2BDF2541B18D523002A1FC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2BDF24E1B18D2AF002A1FC3 /* Model.swift */,
+				D2BDF2571B18DD02002A1FC3 /* User.swift */,
+				D2BDF2591B18E00C002A1FC3 /* Song.swift */,
+				D2BDF2551B18D5AC002A1FC3 /* ParseEngine.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BDF24D1B18D096002A1FC3 /* Login.storyboard in Resources */,
 				D24879E31B18B74C008BB8E3 /* Main.storyboard in Resources */,
 				D24879E81B18B74C008BB8E3 /* LaunchScreen.xib in Resources */,
 				D24879E51B18B74C008BB8E3 /* Images.xcassets in Resources */,
@@ -273,7 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BDF25A1B18E00C002A1FC3 /* Song.swift in Sources */,
+				D2BDF2511B18D40C002A1FC3 /* UIViewControllerExtensions.swift in Sources */,
+				D2BDF24F1B18D2AF002A1FC3 /* Model.swift in Sources */,
+				D2BDF2581B18DD02002A1FC3 /* User.swift in Sources */,
 				D24879FE1B18BC05008BB8E3 /* LoginViewController.swift in Sources */,
+				D2BDF2561B18D5AC002A1FC3 /* ParseEngine.swift in Sources */,
 				D24879DC1B18B74B008BB8E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
