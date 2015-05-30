@@ -50,5 +50,14 @@
 	<string>577276455651817</string>
 	<key>FacebookDisplayName</key>
 	<string>DBGJukebox</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb577276455651817</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
