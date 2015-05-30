@@ -49,6 +49,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func loadHome() {
+        // instantiate the main storyboard
+        let main = UIStoryboard(name: Model.Storyboards.Main, bundle: nil)
+        
+        // get the initial view controller
+        let initialViewController: AnyObject = main.instantiateInitialViewController()
+        
+        // set the root view controller
+        window?.rootViewController = initialViewController as? UIViewController
+    }
 
 }
 
