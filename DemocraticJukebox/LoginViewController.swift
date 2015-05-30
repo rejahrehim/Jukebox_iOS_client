@@ -8,28 +8,39 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        // check for logged in user
+        if FBSDKAccessToken.currentAccessToken() != nil {
+            getCurrentUser()
+            // enter app
+            appDelegate.loadHome()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        
+        // handle errors
+        if error != nil {
+            println("XXX Some error occurred during facebook login \(error.localizedDescription)")
+        }
+        
+        else if result.isCancelled {
+            println("Cant access app without logging in")
+        }
+        
+        else {
+            // enter app
+            appDelegate.loadHome()
+        }
     }
-    */
 
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        // do nothing
+    }
+    
+    }
 }
