@@ -42,5 +42,17 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         // do nothing
     }
     
+    func getCurrentUser() {
+        let graphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
+        graphRequest.startWithCompletionHandler { (connection, result, error) in
+            
+            // handle errors
+            if error != nil {
+                println("error getting user data \(error.localizedDescription)")
+                return
+            }
+            
+            Model.sharedModel.currentUser = User(facebookUser: result)
+        }
     }
 }
