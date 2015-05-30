@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -20,42 +20,11 @@
                         <segue destination="LH0-Gg-BHf" kind="relationship" relationship="viewControllers" id="viI-nO-asc"/>
                         <segue destination="T03-7N-0XX" kind="relationship" relationship="viewControllers" id="TWQ-is-YJ0"/>
                         <segue destination="a6K-3g-Lye" kind="relationship" relationship="viewControllers" id="7zd-Lf-oo5"/>
-                        <segue destination="3lC-wU-gJ3" kind="relationship" relationship="viewControllers" id="6oN-2k-bTU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-454.5" y="-382.5"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="rXp-AW-P0z">
-            <objects>
-                <viewController id="3lC-wU-gJ3" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xzh-Fe-5yj"/>
-                        <viewControllerLayoutGuide type="bottom" id="SnG-kB-6DG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rrb-N4-0qZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDX-SD-EWN">
-                                <rect key="frame" x="164" y="319" width="38" height="30"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonActionLogin:" destination="3lC-wU-gJ3" eventType="touchUpInside" id="5cJ-4j-Sro"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mJ1-s0-iDG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6L2-PT-Xpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="195.5" y="-382.5"/>
         </scene>
         <!--Queue-->
         <scene sceneID="jH8-8C-yYR">
