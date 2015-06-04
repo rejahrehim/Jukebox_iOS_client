@@ -19,6 +19,8 @@
 		D2BDF2561B18D5AC002A1FC3 /* ParseEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF2551B18D5AC002A1FC3 /* ParseEngine.swift */; };
 		D2BDF2581B18DD02002A1FC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF2571B18DD02002A1FC3 /* User.swift */; };
 		D2BDF25A1B18E00C002A1FC3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF2591B18E00C002A1FC3 /* Song.swift */; };
+		D2BDF25C1B19CD83002A1FC3 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF25B1B19CD83002A1FC3 /* SongsViewController.swift */; };
+		D2BDF25E1B19EF6C002A1FC3 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDF25D1B19EF6C002A1FC3 /* ArrayExtensions.swift */; };
 		D8FF28996FA2E3E17303F4CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FB9556014DAD996E8D6F49 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		D2BDF2551B18D5AC002A1FC3 /* ParseEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseEngine.swift; sourceTree = "<group>"; };
 		D2BDF2571B18DD02002A1FC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D2BDF2591B18E00C002A1FC3 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		D2BDF25B1B19CD83002A1FC3 /* SongsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
+		D2BDF25D1B19EF6C002A1FC3 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D2BDF2501B18D40C002A1FC3 /* UIViewControllerExtensions.swift */,
+				D2BDF25D1B19EF6C002A1FC3 /* ArrayExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				D24879FD1B18BC05008BB8E3 /* LoginViewController.swift */,
+				D2BDF25B1B19CD83002A1FC3 /* SongsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -321,7 +327,9 @@
 				D2BDF24F1B18D2AF002A1FC3 /* Model.swift in Sources */,
 				D2BDF2581B18DD02002A1FC3 /* User.swift in Sources */,
 				D24879FE1B18BC05008BB8E3 /* LoginViewController.swift in Sources */,
+				D2BDF25C1B19CD83002A1FC3 /* SongsViewController.swift in Sources */,
 				D2BDF2561B18D5AC002A1FC3 /* ParseEngine.swift in Sources */,
+				D2BDF25E1B19EF6C002A1FC3 /* ArrayExtensions.swift in Sources */,
 				D24879DC1B18B74B008BB8E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
