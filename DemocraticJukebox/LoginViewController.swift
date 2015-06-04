@@ -53,6 +53,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
             
             Model.sharedModel.currentUser = User(facebookUser: result)
+            Model.sharedModel.currentUser.token = "Token " + graphRequest.tokenString
         }
     }
 }
