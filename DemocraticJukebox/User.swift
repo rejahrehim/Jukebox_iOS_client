@@ -16,17 +16,18 @@ class User {
     var name = ""
     var gender = ""
     var link = ""
+    var token: String?
     
     init() {
         
     }
     
     init(facebookUser: AnyObject) {
-        self.id = (facebookUser.valueForKey("id") ?? "") as! String
-        self.firstName = (facebookUser.valueForKey("first_name") ?? "") as! String
-        self.lastName = (facebookUser.valueForKey("last_name") ?? "") as! String
-        self.name = (facebookUser.valueForKey("name") ?? "") as! String
-        self.gender = (facebookUser.valueForKey("gender") ?? "") as! String
-        self.link = (facebookUser.valueForKey("link") ?? "") as! String
+        id = (facebookUser.valueForKey("id") ?? "") as! String
+        firstName = (facebookUser.valueForKey("first_name") ?? "") as! String
+        lastName = (facebookUser.valueForKey("last_name") ?? "") as! String
+        name = (facebookUser.valueForKey("name") ?? "") as! String
+        gender = (facebookUser.valueForKey("gender") ?? "") as! String
+        link = (facebookUser.valueForKey("link") ?? "") as! String
     }
 }
