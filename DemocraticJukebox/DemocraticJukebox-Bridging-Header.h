@@ -13,5 +13,6 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "MGSwipeTableCell.h"
 #import "MGSwipeButton.h"
+#import "MarqueeLabel.h"
 
 #endif

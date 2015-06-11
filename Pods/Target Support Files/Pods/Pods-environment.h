@@ -54,3 +54,9 @@
 #define COCOAPODS_VERSION_MINOR_MGSwipeTableCell 4
 #define COCOAPODS_VERSION_PATCH_MGSwipeTableCell 3
 
+// MarqueeLabel
+#define COCOAPODS_POD_AVAILABLE_MarqueeLabel
+#define COCOAPODS_VERSION_MAJOR_MarqueeLabel 2
+#define COCOAPODS_VERSION_MINOR_MarqueeLabel 2
+#define COCOAPODS_VERSION_PATCH_MarqueeLabel 4
+

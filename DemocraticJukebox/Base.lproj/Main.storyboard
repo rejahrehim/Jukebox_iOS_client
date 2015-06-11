@@ -34,14 +34,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="waJ-b7-gCC">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="eyV-Nq-W9U" id="bYd-4C-l6r"/>
-                            </connections>
-                        </searchBar>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="COH-ng-7Oy">
+                            <rect key="frame" x="0.0" y="64" width="375" height="144"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="tIQ-ee-1BI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="eyV-Nq-W9U" id="Ca7-tz-xi0"/>
+                                    </connections>
+                                </searchBar>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just a really long long looooong song title that scroolllls the hell yeaaah!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPB-q6-fy1" customClass="MarqueeLabel">
+                                    <rect key="frame" x="0.0" y="54" width="375" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rate">
+                                            <real key="value" value="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                            <real key="value" value="50"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGL-TJ-9zP" customClass="MarqueeLabel">
+                                    <rect key="frame" x="0.0" y="79" width="375" height="14"/>
+                                    <string key="text">Just a really long long looooong song title that scroolllls the hell yeaaah!! Just a really long long looooong song title that scroolllls the hell yeaaah!!</string>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rate">
+                                            <real key="value" value="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                            <real key="value" value="50"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-jq-r1F">
+                                    <rect key="frame" x="147" y="106" width="22" height="22"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4K-Pz-vWr">
+                                    <rect key="frame" x="207" y="106" width="22" height="22"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="fPB-q6-fy1" secondAttribute="trailing" id="9Yz-Uq-mTz"/>
+                                <constraint firstItem="tIQ-ee-1BI" firstAttribute="leading" secondItem="COH-ng-7Oy" secondAttribute="leading" id="Dqc-XT-0S2"/>
+                                <constraint firstItem="WGL-TJ-9zP" firstAttribute="leading" secondItem="COH-ng-7Oy" secondAttribute="leading" id="M5c-LV-wiw"/>
+                                <constraint firstAttribute="trailing" secondItem="WGL-TJ-9zP" secondAttribute="trailing" id="Ruu-wh-5eG"/>
+                                <constraint firstAttribute="centerY" secondItem="zdY-jq-r1F" secondAttribute="centerY" constant="-45" id="StY-EE-jRn"/>
+                                <constraint firstAttribute="trailing" secondItem="tIQ-ee-1BI" secondAttribute="trailing" id="U2M-rz-dDM"/>
+                                <constraint firstItem="fPB-q6-fy1" firstAttribute="top" secondItem="tIQ-ee-1BI" secondAttribute="bottom" constant="10" id="W9u-c2-ji0"/>
+                                <constraint firstAttribute="centerX" secondItem="zdY-jq-r1F" secondAttribute="centerX" constant="30" id="cnJ-HF-IW4"/>
+                                <constraint firstAttribute="centerX" secondItem="X4K-Pz-vWr" secondAttribute="centerX" constant="-30" id="eB1-tC-L9I"/>
+                                <constraint firstAttribute="centerY" secondItem="X4K-Pz-vWr" secondAttribute="centerY" constant="-45" id="klH-ts-dKn"/>
+                                <constraint firstItem="tIQ-ee-1BI" firstAttribute="top" secondItem="COH-ng-7Oy" secondAttribute="top" id="mW5-pW-gv3"/>
+                                <constraint firstItem="WGL-TJ-9zP" firstAttribute="top" secondItem="fPB-q6-fy1" secondAttribute="bottom" constant="5" id="nov-1U-N8N"/>
+                                <constraint firstItem="fPB-q6-fy1" firstAttribute="leading" secondItem="COH-ng-7Oy" secondAttribute="leading" id="oLO-eT-qic"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="kSongCell" textLabel="LcJ-os-e6r" detailTextLabel="iio-Vu-2ER" style="IBUITableViewCellStyleSubtitle" id="Dz3-wa-r84" customClass="SongCell" customModule="DemocraticJukebox" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>

@@ -74,7 +74,7 @@ class SongsViewController: UITableViewController, UISearchBarDelegate {
     }
 
     var songsViewMode = SongsViewMode.Songs
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -83,18 +83,18 @@ class SongsViewController: UITableViewController, UISearchBarDelegate {
             songsViewMode = SongsViewMode(rawValue: tabBarController.selectedIndex)!
         }
         
-//        let aSong = Song()
-//        aSong.title = "sample song"
-//        aSong.album = Album()
-//        aSong.album.title = "sample album"
-//        
-//        songs = [aSong, aSong, aSong]
+        let aSong = Song()
+        aSong.title = "sample song"
+        aSong.album = Album()
+        aSong.album.title = "sample album"
+        
+        songs = [aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong, aSong]
         
         
-        // fetch songs
-        Song.fetchSongs(mode: songsViewMode) { (songs) in
-            self.songs = songs
-        }
+//        // fetch songs
+//        Song.fetchSongs(mode: songsViewMode) { (songs) in
+//            self.songs = songs
+//        }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
